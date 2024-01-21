@@ -1,0 +1,33 @@
+{
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx",
+      ".astro"
+    ]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "prettier.documentSelectors": [
+    "**/*.astro",
+    "**/*.tsx"
+  ],
+  "prettier.requireConfig": true,
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
